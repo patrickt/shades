@@ -1,6 +1,10 @@
 # Shades.app
 
-Shades.app is a small utility that places transparent overlays atop portions of your screen. Think of it as a dumber, more granular version of [Flux](https://justgetflux.com) or [Night Shift](https://support.apple.com/en-us/HT207570). When you run it, you'll see a :dark_sunglasses: icon appear in your menu bar.
+Shades.app is a small utility that places transparent overlays atop portions of your screen. Think of it as a dumber, more granular version of [Flux](https://justgetflux.com) or [Night Shift](https://support.apple.com/en-us/HT207570). 
+
+You can download a prebuilt version of it [here](https://www.dropbox.com/s/3m4t2sye7vqsx2w/Shades.zip?dl=0).
+
+When you run it, you'll see a :dark_sunglasses: icon appear in your menu bar.
 
 To add a new shade window, go to the sunglasses icon in your menu bar, click to show the menu, and select 'Add shade window'. At this point you can move and resize the shade window. When you're done, toggle the 'Move/resize shades' item in the menu, and all your mouse clicks will go through the window, as if it weren't there at all. 
 
