@@ -10,6 +10,7 @@
 		55FCF45A20975B7E000CFFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCF45920975B7E000CFFC1 /* AppDelegate.swift */; };
 		55FCF45C20975B7E000CFFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FCF45B20975B7E000CFFC1 /* Assets.xcassets */; };
 		55FCF45F20975B7E000CFFC1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FCF45D20975B7E000CFFC1 /* MainMenu.xib */; };
+		55FCF46820975DEC000CFFC1 /* ShadeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCF46720975DEC000CFFC1 /* ShadeWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		55FCF45E20975B7E000CFFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		55FCF46020975B7E000CFFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FCF46120975B7E000CFFC1 /* Shades.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shades.entitlements; sourceTree = "<group>"; };
+		55FCF46720975DEC000CFFC1 /* ShadeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadeWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				55FCF45D20975B7E000CFFC1 /* MainMenu.xib */,
 				55FCF46020975B7E000CFFC1 /* Info.plist */,
 				55FCF46120975B7E000CFFC1 /* Shades.entitlements */,
+				55FCF46720975DEC000CFFC1 /* ShadeWindow.swift */,
 			);
 			path = Shades;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FCF45A20975B7E000CFFC1 /* AppDelegate.swift in Sources */,
+				55FCF46820975DEC000CFFC1 /* ShadeWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
