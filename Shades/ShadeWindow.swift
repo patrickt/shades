@@ -10,8 +10,9 @@ import Cocoa
 
 class ShadeWindow: NSWindow {
     
-    let kConfiguringMask : NSWindow.StyleMask = [.closable, .resizable]
-    let kStandardMask : NSWindow.StyleMask = .borderless
+    static let defaultColor = NSColor.blue.withAlphaComponent(0.4)
+    private let kConfiguringMask : NSWindow.StyleMask = [.closable, .resizable]
+    private let kStandardMask : NSWindow.StyleMask = .borderless
     
     override var backgroundColor: NSColor! {
         didSet {
@@ -31,7 +32,7 @@ class ShadeWindow: NSWindow {
                    styleMask: kConfiguringMask,
                    backing: NSWindow.BackingStoreType.buffered,
                    defer: false)
-        self.backgroundColor = NSColor.blue.withAlphaComponent(0.4)
+        self.backgroundColor = ShadeWindow.defaultColor
         self.configuring = true
         self.level = NSWindow.Level.floating
         self.isMovableByWindowBackground = true
