@@ -10,6 +10,9 @@ import Cocoa
 
 class ShadeWindow: NSWindow {
     
+    let kConfiguringMask : NSWindow.StyleMask = [.closable, .resizable]
+    let kStandardMask : NSWindow.StyleMask = .borderless
+    
     override var backgroundColor: NSColor! {
         didSet {
             self.alphaValue = self.backgroundColor.alphaComponent
@@ -19,30 +22,23 @@ class ShadeWindow: NSWindow {
     var configuring : Bool = false {
         didSet {
             self.ignoresMouseEvents = !configuring
-            if configuring {
-                self.styleMask = [NSWindow.StyleMask.closable, NSWindow.StyleMask.resizable]
-            } else {
-                self.styleMask = NSWindow.StyleMask.borderless
-            }
+            self.styleMask = configuring ? kConfiguringMask : kStandardMask
         }
     }
     
     init() {
         super.init(contentRect: NSRect(x: 800, y: 800, width: 400, height: 400),
-                   styleMask: NSWindow.StyleMask.borderless,
+                   styleMask: kConfiguringMask,
                    backing: NSWindow.BackingStoreType.buffered,
                    defer: false)
         self.backgroundColor = NSColor.blue.withAlphaComponent(0.4)
-        self.configuring = false
+        self.configuring = true
         self.level = NSWindow.Level.floating
+        self.isMovableByWindowBackground = true
     }
     
     func toggleConfiguring() {
         self.configuring = !self.configuring
-    }
-    
-    override func mouseDragged(with event: NSEvent) {
-        self.setFrameOrigin(NSEvent.mouseLocation)
     }
 
 }
